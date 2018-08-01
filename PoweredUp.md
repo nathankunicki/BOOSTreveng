@@ -19,7 +19,7 @@ This command activates a motor for a certain amount of time. The time period is 
 
 `[0x0a, 0x00, 0x81, port, 0x11, 0x60, 0x00, speed, time, 0x00]`
 
-Making the last byte 0x01 (or anything other than 0x01) activates "swing mode" - the motor activates for a certain amount of time, reverses for the same amount of time, then loops indefinitely.
+Making the last byte 0x01 (or anything other than 0x00) activates "swing mode" - the motor activates for a certain amount of time, reverses for the same amount of time, then loops indefinitely.
 
 `[0x0a, 0x00, 0x81, port, 0x11, 0x60, 0x00, speed, time, 0x01]`
 
